@@ -25,17 +25,17 @@ in ceva de care ma pot folosi.
 
 graf-L.c
 
-	Fisierul contine implementarile tuturor functiilor necesare
+Fisierul contine implementarile tuturor functiilor necesare
 pentru rezolvarea problemei.
 
 	-Split_Path
-	Voi parcurge primul parametru si il voi imparti in 2 bucati
+Voi parcurge primul parametru si il voi imparti in 2 bucati
 file_name - numele fisierului
 root_path - calea catre acest
 Spre exemplu: In /a/b/c: /a/b - root_path, c - fisierul
 
 	-mkdir
-	Functia va parcurge structura, iar acolo unde nu s a alocat
+Functia va parcurge structura, iar acolo unde nu s a alocat
 inca un anumit caracter, il va introduce ca fiind fiul precedentului
 nod din arborele de tip trie.
 
@@ -50,7 +50,7 @@ nodul pe care a trebuit sa ne ducem.
 
 	-pwd
 
-	Voi parcurge structura de la nodul curent si voi retine
+Voi parcurge structura de la nodul curent si voi retine
 parintele nodului respectiv. In cazul in care suntem in root,
 parintele va fi NULL. Voi retine in variabila location fiecare
 caracter care mi trebuie din structura si voi parcurge in continuare
@@ -67,7 +67,7 @@ Functia touch se comporta la fel ca functia mkdir, numai ca
 
 	-ls
 
-	Voi incepe prin a traversa din nodul root al structurii, iar,
+Voi incepe prin a traversa din nodul root al structurii, iar,
 de fiecare data cand gasim un copil diferit de NULL, vom printa
 in fisier "cheia parinte" a copilului nodului, iar apoi voi apela
 functia recursiv pentru fiecare fiu pana cand va fi gasit un nod
@@ -76,7 +76,7 @@ de tip frunza.
 
 	-rm
 
-	Se va parcurge structura in cautarea fisierului de eliminat.
+Se va parcurge structura in cautarea fisierului de eliminat.
 In cazul in care este frunza, variabila ok va retine valoarea 1.
 Aceeasi valoare o va primi in cazul in care copilul nodului nu este
 caracterul '/' ce indica un faptul ca avem de a face cu un fisier, deci
@@ -87,7 +87,7 @@ copil.
 
 	-cp
 
-	Functia va verifica daca parametrii sunt buni, iar apoi se va desparti
+Functia va verifica daca parametrii sunt buni, iar apoi se va desparti
 parametrul "key" in 2 bucati. file_path - calea catre fisier, si
 file_name - numele fisierului si se va crea fisierul folosind functia
 touch la nodul q. Nodul q va reprezenta directorul in care se va
@@ -95,7 +95,7 @@ copia fisierul, locatia acestuia fiind accesata folosind functia cd.
 
 
 	-mv
-	Funcita mv se comporta la fel precum functia cp, cu mici exceptii precum
+Funcita mv se comporta la fel precum functia cp, cu mici exceptii precum
 posibilitatea de a muta un folder, sau intr un fisier care sunt erori.
 Se va parcurge structura, ma voi duce in directorul respectiv, iar, in
 cazul in care este bun, se va efectua mutarea. Functia consta in stergerea
