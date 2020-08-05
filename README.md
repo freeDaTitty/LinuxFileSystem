@@ -40,7 +40,7 @@ inca un anumit caracter, il va introduce ca fiind fiul precedentului
 nod din arborele de tip trie.
 
 	-cd
-	In functie de parametrul primit, functia va cauta prin toata
+In functie de parametrul primit, functia va cauta prin toata
 structura daca exista directorul primit ca parametru, iar apoi
 va fixa locatia pe acel director. Daca se va primi ca parametru
 un fisier, variabila is_file va returna valoarea 1, iar daca
